@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<script type="text/javascript" href="jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<style>
 
 	</style>
@@ -25,7 +25,7 @@
 							<input type="text" class="form-control" name="usuario"><br>
 							<label for="password">Contraseña:</label>
 							<input type="password" class="form-control" name="clave"><br>
-							<input type="submit" class="btn btn-primary">
+							<input id="submit" type="submit" class="btn btn-primary">
 						</div>
 					</form>
 				</div>
@@ -72,7 +72,13 @@
 --> 
 </body>
 	
-	<script type="text/javascript" href="js/bootstrap.min.js"></script>
-	<script type="text/javascript" href="js/popper.js"></script>
-	<script type="text/javascript" href="js/main.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+		jQuery( "#submit" ).click(function( event ) {
+		  //console.log("Click");
+		});
+	</script>
 </html>

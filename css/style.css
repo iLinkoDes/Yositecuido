@@ -1,0 +1,35 @@
+body{
+	background: url(../images/edificios.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+#login_box{
+
+	background-color: white !important;
+	border-radius: 10px;
+	z-index: 2;
+}
+#login_form{
+	padding: 2% 2% 2% 2%
+}
+#login_form:after{
+	content:"";
+	position: absolute;
+	top:10%;
+	right: 0;
+	width: 2px;
+	height: 80%;
+	background: #000;
+}
+.ajustar_medio{
+	margin-top: auto;
+	margin-bottom: auto;
+
+}
+
+#logo p {
+	font-size: 30px;
+}
+#error{
+	display: none !important;
+}

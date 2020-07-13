@@ -16,15 +16,28 @@
 		  die("Connection failed: " . $conn->connect_error);
 		}
 
-		$result = $conn->query("SELECT * FROM backend_usuarios WHERE usuario = '".$user_eval."' AND claveUsuario = '".$pass_eval."'");
-		if($result->num_rows == 1){
-			
-			$resp = $result->mysqli_fetch_array();
-			echo json_encode(array('error'=> false));
-			
-		}else{
+		if($user_eval == "" or $pass_eval == ""){
+
 			echo json_encode(array('error'=> true));
+		
+		}else{
+
+			//$result = $conn->query("SELECT * FROM backend_usuarios WHERE usuario = '".$user_eval."'");
+			if(mysqli_num_rows($result) == 0){
+				echo json_encode(array('error'=> true));
+			}else{
+
+				$conjunto_result = mysqli_fetch_assoc($result);
+				if (password_verify($pass_eval, $conjunto_result['claveUsuario'])) {
+					$resp = $result->fetch_array();
+					echo json_encode(array('error'=> false));
+				}else{
+					echo json_encode(array('error'=> true));
+				}
+				
+			}
 		}
+		
 		
 		$conn->close();
 

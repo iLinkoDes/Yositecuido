@@ -1,6 +1,5 @@
 body{
-	background: url(../images/edificios.jpg) no-repeat center center fixed;
-	background-size: cover;
+
 }
 
 #login_box{
@@ -28,8 +27,9 @@ body{
 }
 
 #logo p {
+	font-family: 'Baloo Paaji 2', cursive;
 	font-size: 30px;
 }
-#error{
-	display: none !important;
+.error{
+	top:-50px;
 }

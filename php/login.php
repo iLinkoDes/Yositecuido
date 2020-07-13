@@ -15,7 +15,7 @@
 		if ($conn->connect_error) {
 		  die("Connection failed: " . $conn->connect_error);
 		}
-
+/*
 		if($user_eval == "" or $pass_eval == ""){
 
 			echo json_encode(array('error'=> true));
@@ -35,6 +35,35 @@
 					echo json_encode(array('error'=> true));
 				}
 				
+			}
+		}
+*/
+		if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'){
+			$conn = new mysqli($servername, $username, $password, $dbname);
+
+			$conn->set_charset('utf8');
+
+			$user_eval = $conn->real_escape_string($_POST["usuario"]);
+			$pass_eval = $conn->real_escape_string($_POST["clave"]);
+
+			if($consulta = $conn->prepare("SELECT * FROM backend_usuarios WHERE usuario = ?")){
+				$consulta->bind_param('s',$user_eval);
+				$consulta->execute();
+
+				$resultado_consulta = $consulta->get_result();
+				if ($resultado_consulta->num_rows == 0) {
+					echo json_encode(array('error'=> true));
+				} else {
+					$conjunto_resultado = mysqli_fetch_assoc($resultado_consulta);
+					if (password_verify($pass_eval, $conjunto_resultado['claveUsuario'])) {
+						$resp = $resultado_consulta->fetch_array();
+						echo json_encode(array('error'=> false));
+					}else{
+						echo json_encode(array('error'=> true));
+					}
+				}
+				
+
 			}
 		}
 		

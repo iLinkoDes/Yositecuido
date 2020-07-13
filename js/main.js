@@ -14,7 +14,7 @@ $("#form").submit(function(event){
 	  dataType: 'json',
 	  data: $(this).serialize(),
 	  beforeSend: function(){
-	  		$('#error').val('Validando...');
+	  		$('#submit').val('Validando...');
 	  	}
 	  })
 	  .done(function(resp) {
@@ -23,6 +23,7 @@ $("#form").submit(function(event){
 	   		location.href="login.html";
 	   	}else{
 	   		$('.error').animate({top:'0px'});
+
 	   	}
 	  })
 	  .fail(function(resp) {
@@ -30,6 +31,7 @@ $("#form").submit(function(event){
 	  })
 	  .always(function() {
 	    console.log("complete");
+	    $('#submit').val('Iniciar Sesion');
 	  });
 });
 

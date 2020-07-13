@@ -12,6 +12,7 @@ body{
 	padding: 2% 2% 2% 2%
 }
 #login_form:after{
+	display: block;
 	content:"";
 	position: absolute;
 	top:10%;
@@ -32,4 +33,13 @@ body{
 }
 .error{
 	top:-50px;
+}
+
+@media (max-width: 992px) { 
+	#login_form:after{
+		visibility: hidden!important;
+	}
+.error{
+	top:-74px;
+}
 }

@@ -35,5 +35,5 @@ $("#form").submit(function(event){
 
 $('.close').click(function(event){
 	event.preventDefault();
-	$('.error').animate({top:'-50px;'});
+	$('.error').animate({top:'-74px;'});
 });

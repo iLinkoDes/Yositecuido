@@ -22,7 +22,7 @@
 		
 		}else{
 
-			//$result = $conn->query("SELECT * FROM backend_usuarios WHERE usuario = '".$user_eval."'");
+			$result = $conn->query("SELECT * FROM backend_usuarios WHERE usuario = '".$user_eval."'");
 			if(mysqli_num_rows($result) == 0){
 				echo json_encode(array('error'=> true));
 			}else{

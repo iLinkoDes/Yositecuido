@@ -14,11 +14,16 @@ $("#form").submit(function(event){
 	  dataType: 'json',
 	  data: $(this).serialize(),
 	  beforeSend: function(){
-
+	  		$('#error').val('Validando...');
 	  	}
 	  })
 	  .done(function(resp) {
 	    console.log(resp);
+	   	if (!resp.error) {
+	   		location.href="login.html";
+	   	}else{
+	   		$('.error').animate({top:'0px'});
+	   	}
 	  })
 	  .fail(function(resp) {
 	    console.log(resp.responseText);
@@ -26,4 +31,9 @@ $("#form").submit(function(event){
 	  .always(function() {
 	    console.log("complete");
 	  });
+});
+
+$('.close').click(function(event){
+	event.preventDefault();
+	$('.error').animate({top:'-50px;'});
 });

@@ -1,16 +1,9 @@
-<html>
-<body>
-	
-
-<p>Subido <?php echo $_GET["nombre"]." ".$_GET["apellidos"]." ". $_GET["user"]." ". $_GET["password"]." ". $_GET["permisosUsuario"]." ". $_GET["activo"]; ?> </p> 
-
-</body>
 <?php
 
 $opciones = [
     'cost' => 15,
 ];
-$pass = $_GET["password"];
+$pass = $_POST["password"];
 
 echo $crypt_pass = password_hash($pass, PASSWORD_BCRYPT, $opciones);
 echo "<br><br>";
@@ -21,19 +14,9 @@ if (password_verify($pass, $crypt_pass)){
 	echo "ño\n<br><br>";
 }
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "yocuidodeti";
+require("db_conf/conn.php");
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-echo $sql = "INSERT INTO backend_usuarios (nombre, apellidos, usuario, claveUsuario, permisosUsuario, activo) VALUES ('".$_GET["nombre"]."', '".$_GET["apellidos"]."', '". $_GET["user"]."', '". $crypt_pass. "', '".$_GET["permisosUsuario"]."', '".$_GET["activo"]."')";
+$sql = "INSERT INTO backend_usuarios (nombre, apellidos, usuario, claveUsuario, permisosUsuario, activo) VALUES ('".$_POST["nombre"]."', '".$_POST["apellidos"]."', '". $_POST["user"]."', '". $crypt_pass. "', '".$_POST["permisosUsuario"]."', '".$_POST["activo"]."')";
 
 if ($conn->query($sql) === TRUE) {
   echo "<br><br>Successfully.";
@@ -44,6 +27,6 @@ if ($conn->query($sql) === TRUE) {
 
 
 $conn->close();
-?>
 
-</html>
+header('Location: ../redirect.php');
+?>

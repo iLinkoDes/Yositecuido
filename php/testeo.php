@@ -14,18 +14,9 @@
 			echo "ño\n<br><br>";
 		}
 
-		$servername = "localhost";
-		$username = "root";
-		$password = "";
-		$dbname = "yocuidodeti";
-
-		// Create connection
-		$conn = new mysqli($servername, $username, $password, $dbname);
-		// Check connection
-		if ($conn->connect_error) {
-		  die("Connection failed: " . $conn->connect_error);
-		}
-
+		// Conexion a Base de Datos
+		require("db_conf/conn.php");
+		
 		echo $sql = "INSERT INTO backend_usuarios (nombre, apellidos, usuario, claveUsuario, permisosUsuario, activo) VALUES ('".$_GET["nombre"]."', '".$_GET["apellidos"]."', '". $_GET["user"]."', '". $crypt_pass. "', '".$_GET["permisosUsuario"]."', '".$_GET["activo"]."')";
 
 		if ($conn->query($sql) === TRUE) {

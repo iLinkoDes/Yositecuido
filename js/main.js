@@ -20,7 +20,7 @@ $("#form").submit(function(event){
 	  .done(function(resp) {
 	    console.log(resp);
 	   	if (!resp.error) {
-	   		location.href="login.html";
+	   		location.href="php/redirect.php";
 	   	}else{
 	   		$('.error').animate({top:'0px'});
 

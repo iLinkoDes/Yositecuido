@@ -26,7 +26,10 @@ body{
 	margin-bottom: auto;
 
 }
-
+a#logo{
+	font-family: 'Baloo Paaji 2', cursive;
+	font-size: 28px;
+}
 #logo p {
 	font-family: 'Baloo Paaji 2', cursive;
 	font-size: 30px;
@@ -35,6 +38,20 @@ body{
 	top:-50px;
 }
 
+nav.navbar{
+	background-color: rgb(143, 189, 227)!important;
+}
+.all-container{
+	background-color: #F1F1F1;
+	width: 100%;
+	height: 100%;
+}
+
+#wrap-contenido > div{
+	background: #FFFFFF;
+	border-radius: 10px;
+	min-height: 500px;
+}
 @media (max-width: 992px) { 
 	#login_form:after{
 		visibility: hidden!important;

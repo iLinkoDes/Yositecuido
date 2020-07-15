@@ -58,6 +58,8 @@
 			</div>
 		</div>
 	</div>
+
+	
 	<!-- <a href="php/salir.php">Salir</a> -->
 	</body>
 	<script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>

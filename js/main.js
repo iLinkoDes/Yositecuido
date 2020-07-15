@@ -35,7 +35,33 @@ $("#form").submit(function(event){
 	  });
 });
 
-$('.close').click(function(event){
+$('#add_users').submit(function(event){
 	event.preventDefault();
-	$('.error').animate({top:'-74px;'});
+	console.log("click");
+
+	jQuery.ajax({
+	  url: '../php/test.php',
+	  type: 'POST',
+	  dataType: 'json',
+	  data: $(this).serialize(),
+	  beforeSend: function(){
+	  		$('#submit').val('Validando...');
+	  	}
+	  })
+	  .done(function(resp) {
+	    console.log(resp);
+	   	if (!resp.error) {
+	   		location.href="AdminDashboard.php";
+	   	}else{
+	   		
+
+	   	}
+	  })
+	  .fail(function(resp) {
+	    console.log(resp.responseText);
+	  })
+	  .always(function() {
+	    console.log("complete");
+	    $('#submit').val('Enviar');
+	  });
 });

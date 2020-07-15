@@ -78,22 +78,22 @@
 					</select>
 					<input type="submit">
 				</form>	 -->
-				<form action="../php/test.php" method="post">
+				<form id="add_users" action="" method="post">
 				  <div class="form-group">
 				    <label for="">Nombre:</label>
-				    <input type="text" name="nombre" class="form-control" required>
+				    <input type="text" name="nombre" class="form-control" required pattern="[A-Za-z0-9_-]{1,20}">
 				  </div>
 				  <div class="form-group">
 				    <label for="">Apellidos:</label>
-				    <input type="text" class="form-control" name="apellidos" required>
+				    <input type="text" class="form-control" name="apellidos" required pattern="[A-Za-z0-9_-]{1,20}">
 				  </div>
 				  <div class="form-group">
 				    <label for="">Usuario:</label>
-				    <input type="text" class="form-control" name="user" required>
+				    <input type="text" class="form-control" name="user" required pattern="[A-Za-z0-9_-]{1,20}">
 				  </div>
 				  <div class="form-group">
 				    <label for="">Contraseña:</label>
-				    <input type="password" class="form-control" name="password" required>
+				    <input type="password" class="form-control" name="password" required pattern="[A-Za-z0-9_-]{1,20}">
 				  </div>
 				  <div class="row">
 				  	<div class="col-6">
@@ -113,12 +113,17 @@
 						</select>
 					</div>
 				  </div>
-				  <button type="submit" class="btn btn-primary float-right my-4 mr-3">Submit</button>
+				  <input id="submit" type="submit" class="btn btn-primary float-right my-4 mr-3" value="Submit">
 				</form>
 			
 			</div>
 		</div>
+
+		<div class="error alert alert-success text-center" role="alert" style="position: fixed; z-index: 9; top:100%; width: 100%;">
+		 	Se ha agregado un nuevo usuario con exito.
+		</div>
 	</div>
+
 	<!-- <a href="php/salir.php">Salir</a> -->
 	</body>
 	<script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>

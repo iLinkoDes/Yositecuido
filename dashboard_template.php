@@ -7,13 +7,13 @@
 	<title>#YoCuidoDeTi - PRUEBA Dashboard</title>
 	<meta charset="utf-8">
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	 <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 
-	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 	<body>
 
@@ -38,8 +38,8 @@
 	</div>
 	<!-- <a href="php/salir.php">Salir</a> -->
 	</body>
-	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
 	<script src="https://unpkg.com/@popperjs/core@2"></script>
-	<script src="js/main.js"></script>
+	<script src="../js/main.js"></script>
 </html>
 

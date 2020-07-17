@@ -56,6 +56,8 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
 
 				$resp = $resultado_consulta->fetch_array();
 				$_SESSION['usuario'] = $conjunto_resultado;
+				unset($_SESSION['usuario']['claveUsuario']);
+				unset($_SESSION['usuario']['activo']);
 
 				echo json_encode(array('error'=> false));
 			}else{

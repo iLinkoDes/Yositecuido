@@ -77,9 +77,10 @@
 				  	<div class="col-6">
 				  		<label for="">Permisos:</label>
 					  	<select class="custom-select" name="permisosUsuario">
-						  <option value="3">Cliente</option>
-						  <option value="2">Soporte</option>
-						  <option value="1">Logistica</option>
+						  <option value="4">Cliente</option>
+						  <option value="3">Soporte</option>
+						  <option value="2">Logistica</option>
+						  <option value="1">Operaciones</option>
 						  <option value="0">Administrador</option>
 						</select>
 					</div>

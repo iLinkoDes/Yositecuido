@@ -28,12 +28,165 @@
 	</div>
 	<div class="container-full all-container">
 		<div class="d-flex row p-5" id="wrap-contenido">
-			<div class="col-8 ml-auto mr-4 py-4 px-4">
+			<!--<div class="col-8 ml-auto mr-4 py-4 px-4">
 				<h2 class="text-center">Contenido para Administradores</h2>
 				<p class="px-3 py-3" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nulla facilisi morbi tempus iaculis. Mauris in aliquam sem fringilla ut morbi tincidunt. Aliquam id diam maecenas ultricies mi eget mauris pharetra et. Hac habitasse platea dictumst vestibulum. In fermentum posuere urna nec tincidunt praesent semper feugiat. Mattis pellentesque id nibh tortor id aliquet. Id diam maecenas ultricies mi eget. Integer vitae justo eget magna fermentum. Quis commodo odio aenean sed adipiscing diam. Dolor sed viverra ipsum nunc aliquet bibendum enim. <br><br>
 
 				Eget nunc scelerisque viverra mauris in aliquam sem fringilla. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat. Ultrices mi tempus imperdiet nulla. Dui id ornare arcu odio ut sem nulla pharetra diam. Massa id neque aliquam vestibulum morbi blandit. Dui nunc mattis enim ut tellus elementum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada. Felis imperdiet proin fermentum leo vel orci porta non. Praesent tristique magna sit amet purus gravida quis blandit turpis. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. Mauris pharetra et ultrices neque ornare aenean. Posuere urna nec tincidunt praesent semper feugiat nibh. Consequat semper viverra nam libero justo. Et ligula ullamcorper malesuada proin libero nunc consequat interdum. Et odio pellentesque diam volutpat commodo sed..</p>
+			</div> -->
+			
+			<!--Accordion wrapper-->
+			<div class="accordion md-accordion col-8  mr-4 px-0" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+			  <!-- Administradores -->
+			  <div class="card">
+
+			    <!-- Card header -->
+			    <div class="card-header" role="tab" id="headingOne1">
+			      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+			        aria-controls="collapseOne1">
+			        <h5 class="mb-0">
+			          Contenido para Administradores <i class="float-right fas fa-angle-down rotate-icon"></i>
+			        </h5>
+			      </a>
+			    </div>
+
+			    <!-- Card body -->
+			    <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+			      data-parent="#accordionEx">
+			      <div class="card-body">
+			        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nulla facilisi morbi tempus iaculis. Mauris in aliquam sem fringilla ut morbi tincidunt. Aliquam id diam maecenas ultricies mi eget mauris pharetra et. Hac habitasse platea dictumst vestibulum. In fermentum posuere urna nec tincidunt praesent semper feugiat. Mattis pellentesque id nibh tortor id aliquet. Id diam maecenas ultricies mi eget. Integer vitae justo eget magna fermentum. Quis commodo odio aenean sed adipiscing diam. Dolor sed viverra ipsum nunc aliquet bibendum enim. <br><br>
+
+				Eget nunc scelerisque viverra mauris in aliquam sem fringilla. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat. Ultrices mi tempus imperdiet nulla. Dui id ornare arcu odio ut sem nulla pharetra diam. Massa id neque aliquam vestibulum morbi blandit. Dui nunc mattis enim ut tellus elementum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada. Felis imperdiet proin fermentum leo vel orci porta non. Praesent tristique magna sit amet purus gravida quis blandit turpis. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. Mauris pharetra et ultrices neque ornare aenean. Posuere urna nec tincidunt praesent semper feugiat nibh. Consequat semper viverra nam libero justo. Et ligula ullamcorper malesuada proin libero nunc consequat interdum. Et odio pellentesque diam volutpat commodo sed..
+			      </div>
+			    </div>
+
+			  </div>
+			  <!-- END Administradores -->
+
+			  <!-- Operaciones -->
+			  <div class="card">
+
+			    <!-- Card header -->
+			    <div class="card-header" role="tab" id="headingTwo2">
+			      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+			        aria-expanded="false" aria-controls="collapseTwo2">
+			        <h5 class="mb-0">
+			          Contenido para Operaciones <i class="float-right fas fa-angle-down rotate-icon"></i>
+			        </h5>
+			      </a>
+			    </div>
+
+			    <!-- Card body -->
+			    <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+			      data-parent="#accordionEx">
+			      <div class="card-body">
+			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+			        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+			        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+			        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+			        nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+			        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+			        labore sustainable VHS.
+			      </div>
+			    </div>
+
+			  </div>
+			  <!-- END Operaciones -->
+
+			  <!-- Logistica -->
+			  <div class="card">
+
+			    <!-- Card header -->
+			    <div class="card-header" role="tab" id="headingThree3">
+			      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+			        aria-expanded="false" aria-controls="collapseThree3">
+			        <h5 class="mb-0">
+			          Contenido para Logistica <i class="float-right fas fa-angle-down rotate-icon"></i>
+			        </h5>
+			      </a>
+			    </div>
+
+			    <!-- Card body -->
+			    <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+			      data-parent="#accordionEx">
+			      <div class="card-body">
+			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+			        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+			        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+			        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+			        nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+			        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+			        labore sustainable VHS.
+			      </div>
+			    </div>
+
+			  </div>
+			  <!-- END Logistica -->
+
+			  <!-- Accordion card -->
+			  <div class="card">
+
+			    <!-- Card header -->
+			    <div class="card-header" role="tab" id="headingThree3">
+			      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree4"
+			        aria-expanded="false" aria-controls="collapseThree3">
+			        <h5 class="mb-0">
+			          Contenido para Soporte <i class="float-right fas fa-angle-down rotate-icon"></i>
+			        </h5>
+			      </a>
+			    </div>
+
+			    <!-- Card body -->
+			    <div id="collapseThree4" class="collapse" role="tabpanel" aria-labelledby="headingThree4"
+			      data-parent="#accordionEx">
+			      <div class="card-body">
+			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+			        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+			        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+			        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+			        nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+			        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+			        labore sustainable VHS.
+			      </div>
+			    </div>
+
+			  </div>
+			  <!-- Accordion card -->
+
+			  <!-- Accordion card -->
+			  <div class="card">
+
+			    <!-- Card header -->
+			    <div class="card-header" role="tab" id="headingThree3">
+			      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree5"
+			        aria-expanded="false" aria-controls="collapseThree3">
+			        <h5 class="mb-0">
+			          Contenido para Cliente <i class="float-right fas fa-angle-down rotate-icon"></i>
+			        </h5>
+			      </a>
+			    </div>
+
+			    <!-- Card body -->
+			    <div id="collapseThree5" class="collapse" role="tabpanel" aria-labelledby="headingThree5"
+			      data-parent="#accordionEx">
+			      <div class="card-body">
+			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+			        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+			        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+			        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+			        nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+			        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+			        labore sustainable VHS.
+			      </div>
+			    </div>
+
+			  </div>
+			  <!-- Accordion card -->
+
 			</div>
+<!-- Accordion wrapper -->
+
 			<div class="col-3 mr-auto">
 				<h4 class="text-center py-4">Agregar Usuarios</h4>
 		<!-- 
